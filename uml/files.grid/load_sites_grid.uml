@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>#/Users/msk/Pycharm_Pro/sites.grid/load_sites_grid.py</OriginalElement>
+  <nodes>
+    <node x="1726.5" y="1361.5">load_sites_grid.MyThread</node>
+    <node x="989.5" y="697.5">threading.Thread</node>
+    <node x="580.0" y="65.5">object</node>
+    <node x="369.0" y="592.5">load_sites_grid.Controller</node>
+  </nodes>
+  <notes>
+    <note x="1728.0" y="1258.0">
+      <node>load_sites_grid.MyThread</node>
+      <value>Thread implemenatation to handle csv \nread and write operations</value>
+      <edge>
+        <point x="0.0" y="-38.5" />
+        <point x="0.0" y="22.0" />
+      </edge>
+    </note>
+    <note x="701.5" y="606.0">
+      <node>threading.Thread</node>
+      <value>Python threading module internals</value>
+      <edge>
+        <point x="-20.0" y="-302.5" />
+        <point x="1320.0" y="660.0" />
+        <point x="820.0" y="660.0" />
+        <point x="0.0" y="14.0" />
+      </edge>
+    </note>
+    <note x="608.0" y="-14.0">
+      <node>object</node>
+      <value>Base class for all python objects</value>
+      <edge>
+        <point x="0.0" y="-214.5" />
+        <point x="0.0" y="14.0" />
+      </edge>
+    </note>
+    <note x="-0.5" y="506.0">
+      <node>load_sites_grid.Controller</node>
+      <value>Controller class which handles thread life cycles</value>
+      <edge>
+        <point x="-20.0" y="-27.5" />
+        <point x="500.0" y="560.0" />
+        <point x="160.0" y="560.0" />
+        <point x="0.0" y="14.0" />
+      </edge>
+    </note>
+  </notes>
+  <edges>
+    <edge source="load_sites_grid.MyThread" target="threading.Thread" relationship="REALIZATION">
+      <point x="-20.0" y="-38.5" />
+      <point x="1840.0" y="1340.0" />
+      <point x="1340.0" y="1340.0" />
+      <point x="0.0" y="302.5" />
+    </edge>
+    <edge source="load_sites_grid.Controller" target="object" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="520.0" y="560.0" />
+      <point x="720.0" y="560.0" />
+      <point x="0.0" y="214.5" />
+    </edge>
+    <edge source="threading.Thread" target="object" relationship="REALIZATION">
+      <point x="0.0" y="-302.5" />
+      <point x="1340.0" y="560.0" />
+      <point x="720.0" y="560.0" />
+      <point x="0.0" y="214.5" />
+    </edge>
+  </edges>
+  <settings layout="Directed (Bottom to Top)" zoom="0.8011461318051576" showDependencies="false" x="675.126251788269" y="737.1405579399142" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+</Diagram>
+

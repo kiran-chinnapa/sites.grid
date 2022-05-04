@@ -1,0 +1,49 @@
+﻿Sl No,Column Group,Column Name,Column Description,Example,How To Source,Accuracy Checks,Use Case,Bea's Comment
+1,,IP Address,The IP Address of the URL,121.12.23.20,Extracted from web sockets,,,Add GitHub
+2,,Site Status,If the website is active,Inactive,"Extracted from the response code from the website (200, 301, 302 for Active)",,,Add LinkedIn
+3,,Last Modified Date,The last date when the websitw was modified,12/12/12 16:25,Extracted from HTTP Header,,,Add FB
+4,,Meta Tags,,,Extracted from source using Beautiful Soup,,,Add IG
+5,,About,Website description,"We are a team of passionate engineers. We build Intelligent Platforms that process Millions of Transactions per second. Our expertise is in React, Svelte, Java, Python, Kafka, Snowflake, Postgres, Jenkins, GitLab, Nexus, PCF, Terraform, Kubernetes, AWS, Azure, GCP & Linux.",Extracted using About keyword or from data in About page,,,Add Resume
+6,,People,Owners or people assoocitaed with the website,,ICANN Query,,,Add Education History
+7,,E-Mail,Website E-Mail address,xxx@yyy.com,ICANN Query,,,Add EMployment HIstory
+8,,Phone,Website phone,(+1) 2222222222,ICANN Query,,,
+9,,WhatsApp,Website WhatsApp,(+1) 2222222222,Extracted using WhatsApp keyword,,,
+10,,Address,Website address,,ICANN Query,,,
+11,,Website County,Website County,,By searching in getzips.com/zip using zip code.,,,
+12,,Website City,Website City,New York,ICANN Query,,,
+13,,Website Country,Website Country,USA,ICANN Query,,,
+14,,Website Zip Code,Website Zip Code,78654,"Conditional, based on keywords like ""Contact Us"" information.",,,
+15,,Protocol,HTTP or HTTPS,HTTPS,Extracted from the reponse head if website is Active,,,
+16,,Payments,The existence of payment services on the website,TRUE,"Conditional, based on search keyword Payment",,,
+17,,Log-In,The existence of a log in service,FALSE,"Conditional, based on search keywords - SignIn, SignUp, LogIn",,,
+18,,Products,Possible products listed on the website,Shoes,"Extracted from search keywords - Product, Service",,,
+19,,Category,The category under which the website falls,Shopping,Extracted from SafeDNS Query,,,
+20,,Age Restriction,The age restriction of the website,18+,"Extracted using age keyword checks on the website, or search using public search engines, or look into the terms and conditions",,,
+21,,Nature of Content,The majority of content type on the website,Images,Computed by identifying the numbers of text or media tags in the website,,,
+22,,Site ID,Unique ID for each website,125698874,"Assigned by developer , a 9 digit number. Needed for associating sites with pages",,,
+23,,Page ID,A set of unique IDs for each page in the website,"[4654,65458,8976,31848]","Assigned by developer , a 12 digit number. Needed for associating sites with pages",,,
+24,,Captcha,The existence of Captcha on the website,TRUE,"Conditional, based on search keyword - Captcha and HTML response",,"Does the site have Captcha? = 200M
+Which Captcha?",
+25,,IP Country,Country of the IP Address,France,using site24x7.com/find-website-location.html query,,Can be useful to identify websites hosted at similar locations and statistics,
+26,,ADs,The existence of advertisements on the website,TRUE,"Conditional, based on the existence of links to ad services",,Can be useful for categorizing websites and satistics,
+27,,Mobile Friendly,If the website is mobile friendly or has a responsive design,FALSE,"Conditional, based on the existence of mobile HTML or responsive design. Look for screen size check conditions in the page.",,Can be useful for developers and statisticians,
+28,,Website Content Language,The language of the content on the website,English,The text on the website can be extracted and checked for language using google translate,,Useful for filtering language-wise content,
+29,,Website Content Supported Languages,Languages supported on the website,,"get values from html attribute ""lang"" within the page, if not available scrape random text from page and send to google translate",,,
+30,,Website Code Language,The language of the code on the website,JavaScript,The reponse HTML can be accessed for code scripts,,Can be useful for developers and statisticians,
+31,,Website Code Language Version,The version of the language of the code on the website,py 3.9,"Look for the following keywords and extenstions within page source.
+Doctype, .js, .php, .cs, .jsp, .py, .sql, .asp, .net",,,
+32,,Business Hours,Business Operating Hours,,"Extract from google maps, if not available scrape from the website.",,,
+33,,Delivery Service,Bussiness Delivery Possibility,,"Check if the website category is ""shopping"" from safe dns search, if not found search in google to know if they offer delivery servide or not",,,
+34,,Primary Address,Primary Address,,"By scraping the page and parsing ""Contact Us"" information.",,,
+35,,Primary Address Geolocation,Primary Address Geolocation,,"Need to send the physical address to open source api, to get the geo location.",,,
+36,,Primary Address County,Primary Address County,,"Extract from the website by scrapping the page for keyword ""County"", if not found send the zip code to getzips.com/zip and get the county",,,
+37,,Primary Address City,Primary Address City,,"Extract from the website by scrapping the page for keyword ""City""",,,
+38,,Primary Address Country,Primary Address Country,,"Extract from the website by scrapping the page for keyword ""Country""",,,
+39,,Primary Address Zip Code,Primary Address Zip Code,,"Extract from the website by scrapping the page for keyword ""Zip Code""",,,
+40,,Primary E-Mail,Primary E-Mail,,"Extract from the website by scrapping the page for keyword ""email""",,,
+41,,Primary Phone,Primary Phone,,"Extract from the website by scrapping the page for keyword ""phone""",,,
+42,,Primary Social Links,Primary Social Links,,"Look for keywords like ""social media"" ,""social-media"", ""facebook"", ""twitter"",""instagram"",""youtube"", ""linkedin"", ""pinterest"". Extract the hyper links around these text.",,,
+43,,Textable Primary Phone,The availability of texting feature on Primary Phone,,Look into the page for keywords like phone number and mobile number,,,
+44,,Google Rating,Google Rating,,By looking into google maps for the domain,,,
+45,,Data Last Updated,Date when scraped data was last updated,12/12/12 16:25,use system date and time in the format specified.,,,
+46,,Hiring,If the business is Hiring people,,"look keywords like ""Careers"", ""jobs"", ""hiring"", ""postings"", ""placements"", ""employment"" in sitemap urls'",,,

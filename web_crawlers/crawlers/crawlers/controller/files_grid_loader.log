@@ -1,0 +1,4 @@
+2022-01-10 20:56:58 DEBUG    POST http://localhost:57506/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36", "--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36", "--headless"]}}}
+2022-01-10 20:56:58 DEBUG    Starting new HTTP connection (1): localhost:57506
+2022-01-10 20:57:00 DEBUG    http://localhost:57506 "POST /session HTTP/1.1" 200 798
+2022-01-10 20:57:00 DEBUG    Finished Request

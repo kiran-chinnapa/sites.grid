@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>#/Users/msk/Pycharm_Pro/sites.grid/poc1_oo.py</OriginalElement>
+  <nodes>
+    <node x="182.0" y="773.0">poc1_oo.POC1_OO</node>
+    <node x="523.5" y="78.0">typing.Hashable</node>
+    <node x="358.0" y="183.0">object</node>
+  </nodes>
+  <notes>
+    <note x="0.0" y="423.0">
+      <node>poc1_oo.POC1_OO</node>
+      <value>Controller class responsible for deleting the rows, \nsearch url's from source grid, \nidentify sitemap pages and insert to target grid</value>
+      <edge>
+        <point x="-75.75" y="-71.5" />
+        <point x="257.75" y="748.0" />
+        <point x="169.0" y="748.0" />
+        <point x="0.0" y="30.0" />
+      </edge>
+    </note>
+    <note x="353.0" y="0.0">
+      <node>typing.Hashable</node>
+      <value>The Python runtime does not enforce function and variable type annotations</value>
+      <edge>
+        <point x="0.0" y="-27.5" />
+        <point x="0.0" y="14.0" />
+      </edge>
+    </note>
+    <note x="279.5" y="91.5">
+      <node>object</node>
+      <value>Base class for all python objects</value>
+      <edge>
+        <point x="-70.0" y="-270.0" />
+        <point x="428.0" y="158.0" />
+        <point x="391.5" y="158.0" />
+        <point x="0.0" y="14.0" />
+      </edge>
+    </note>
+  </notes>
+  <edges>
+    <edge source="object" target="typing.Hashable" relationship="INTERFACE">
+      <point x="70.0" y="-270.0" />
+      <point x="568.0" y="158.0" />
+      <point x="604.5" y="158.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="poc1_oo.POC1_OO" target="object" relationship="REALIZATION">
+      <point x="75.75" y="-71.5" />
+      <point x="409.25" y="748.0" />
+      <point x="498.0" y="748.0" />
+      <point x="0.0" y="270.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8290598290598291" showDependencies="false" x="258.53092783505156" y="278.88144329896903" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+</Diagram>
+

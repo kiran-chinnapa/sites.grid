@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>#/Users/msk/Pycharm_Pro/sites.grid/sites_grid_loader.py</OriginalElement>
+  <nodes>
+    <node x="1177.75" y="904.0">sites_grid_loader.MyThread</node>
+    <node x="0.0" y="557.0">threading.Thread</node>
+    <node x="510.5" y="78.0">object</node>
+  </nodes>
+  <notes>
+    <note x="1596.0" y="691.5">
+      <node>sites_grid_loader.MyThread</node>
+      <value>Controller class handling multiple csv files I/O and thread scheduling</value>
+      <edge>
+        <point x="63.25" y="-38.5" />
+        <point x="1367.5" y="879.0" />
+        <point x="1820.5" y="879.0" />
+        <point x="0.0" y="14.0" />
+      </edge>
+    </note>
+    <note x="807.5" y="278.5">
+      <node>threading.Thread</node>
+      <value>Python Threading module Internals</value>
+      <edge>
+        <point x="394.0" y="-148.5" />
+        <point x="1182.0" y="532.0" />
+        <point x="927.0" y="532.0" />
+        <point x="0.0" y="14.0" />
+      </edge>
+    </note>
+    <note x="537.5" y="0.0">
+      <node>object</node>
+      <value>Base class for all python objects</value>
+      <edge>
+        <point x="0.0" y="-214.5" />
+        <point x="0.0" y="14.0" />
+      </edge>
+    </note>
+  </notes>
+  <edges>
+    <edge source="sites_grid_loader.MyThread" target="threading.Thread" relationship="REALIZATION">
+      <point x="-63.25" y="-38.5" />
+      <point x="1241.0" y="879.0" />
+      <point x="788.0" y="879.0" />
+      <point x="0.0" y="148.5" />
+    </edge>
+    <edge source="threading.Thread" target="object" relationship="REALIZATION">
+      <point x="-394.0" y="-148.5" />
+      <point x="394.0" y="532.0" />
+      <point x="649.0" y="532.0" />
+      <point x="0.0" y="214.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.676997578692494" showDependencies="false" x="1022.5" y="490.5" />
+  <SelectedNodes>
+    <node>sites_grid_loader.MyThread</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+</Diagram>
+
